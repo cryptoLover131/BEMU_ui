@@ -4,7 +4,11 @@ import throttle from "lodash/throttle";
 
 declare global {
   interface Window {
-    StickyShowcase: any;
+    StickyShowcase: (config: {
+      data: { image: string; meta: string; title: string }[];
+      containerId: string;
+      waveOptions: { speed: number; frequency: number; amplitude: number };
+    }) => void;
   }
 }
 
