@@ -1,0 +1,147 @@
+:root {
+  --white: white;
+  --black: black;
+}
+
+body {
+  color: #333;
+  background-color: #1f1f1f;
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.content {
+  background-color: #171718;
+  background-image: radial-gradient(circle, #1b2722, #171717);
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  inset: 0%;
+  overflow: hidden;
+}
+
+.hint-text {
+  opacity: 1;
+  color: #fff;
+  align-items: center;
+  width: 20vw;
+  height: 20vh;
+  font-family: GRIFTER, sans-serif;
+  font-weight: 800;
+  display: flex;
+  position: fixed;
+  inset: auto 0% 0% auto;
+}
+
+.hint-text.icons {
+  opacity: 1;
+  justify-content: flex-start;
+  align-items: center;
+  width: auto;
+  padding-left: 10vw;
+  inset: auto auto 0% 0%;
+}
+
+.hint-text.hide {
+  display: none;
+}
+
+.text-block {
+  opacity: .6;
+  letter-spacing: .4px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.text-block.copy {
+  opacity: 100;
+  color: #fff;
+  line-height: 14px;
+  text-decoration: none;
+}
+
+.body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+
+.socials {
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+}
+
+.image {
+  width: 24px;
+}
+
+.link-block {
+  opacity: .8;
+}
+
+.link-block:hover {
+  opacity: .9;
+}
+
+.ico {
+  width: 18px;
+}
+
+.div-block {
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  justify-content: flex-start;
+  align-items: flex-end;
+  text-decoration: none;
+  display: flex;
+}
+
+.div-block:hover {
+  opacity: .9;
+}
+
+@media screen and (max-width: 991px) {
+  .hint-text {
+    width: 24vw;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hint-text {
+    width: 32vw;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .hint-text {
+    width: 42vw;
+  }
+}
+
+
+@font-face {
+  font-family: 'Valorant';
+  src: url('../fonts/Valorant-Font.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Helvetica';
+  src: url('../fonts/Helvetica.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRIFTER';
+  src: url('../images/') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: auto;
+}

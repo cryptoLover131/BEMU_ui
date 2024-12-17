@@ -1,0 +1,24 @@
+{
+  "short_name": "BEMU",
+  "name": "BEMU",
+  "description": "",
+  "homepage_url": "https://marvinonbase.com/",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#1FC7D4",
+  "background_color": "#ffffff",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "type": "image/png",
+      "sizes": "64x64"
+    },
+    {
+      "src": "logo.png",
+      "type": "image/png",
+      "sizes": "64x64"
+    }
+  ],
+  "iconPath": "/images/pcb.png"
+}
