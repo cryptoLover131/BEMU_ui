@@ -181,10 +181,8 @@ export default function Swap() {
   return (
     <Page className='swigy-cs1'>
       <Flex className='swigy-cs' justifyContent="center" mt="40px">        
+      {account && 
         <AppBody>
-          {/* <CurrencyInputHeader
-            title='Swap'
-          /> */}
           <Wrapper id="swap-page" position="relative">
             <CurrencyInputPanel
               label={independentField === Field.OUTPUT && !showWrap && tradeInfo ? 'From (estimated)' : 'From'}
@@ -283,32 +281,8 @@ export default function Swap() {
                   />
               )}
           </Wrapper>
-        </AppBody>
+        </AppBody>}
       </Flex>
-      {/* <Flex justifyContent="center" mt="10px">
-        <ArbitrumBridgeBox
-          as={NextLinkFromReactRouter}
-          to={`https://app.uniswap.org/swap?inputCurrency=${inputCurrencyId}&outputCurrency=${outputCurrencyId}?chain=base`}
-          target='_blink'
-          p="12px"
-        >
-          <Flex alignItems="center">
-            <img 
-              src='/images/uniswap-logo.png' 
-              width="40px" 
-              height="40px" 
-              alt="bridgeIcon" 
-              style={{borderRadius: "12px"}}
-            />
-            <Box ml="10px">
-              <Text fontSize="16px" lineHeight="1.2" color="primaryDark">The Swap is based on the Uniswap V2 Router.</Text>
-            </Box>
-          </Flex>
-          <Flex mr="10px">
-            <OpenNewIcon color="primaryDark" />
-          </Flex>
-        </ArbitrumBridgeBox>
-      </Flex> */}
     </Page>
   )
 }

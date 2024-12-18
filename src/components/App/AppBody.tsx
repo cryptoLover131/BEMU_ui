@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { Card } from '../Card'
 
 export const BodyWrapper = styled(Card)`
-  border-radius: 8px;
+  border-radius: 23px;
   max-width: 464px;
   width: 100%;
   z-index: 1;
