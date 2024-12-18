@@ -24,7 +24,7 @@ const ScrollToTopButtonV2 = () => {
   useEffect(() => {
     const toggleVisible = () => {
       const scrolled = document.documentElement.scrollTop;
-      alert(scrolled)
+      // alert(scrolled)
 
       if (scrolled > 500) {
         setVisible(true);

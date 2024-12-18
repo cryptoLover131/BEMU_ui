@@ -66,7 +66,7 @@ const LandingPage: React.FC = () => {
       const scrolled = document.documentElement.scrollTop;
       if (scrolled > 500) {
         setVisible(true);
-        alert(scrolled)
+        // alert(scrolled)
       } else if (scrolled <= 500) {
         setVisible(false);
       }
