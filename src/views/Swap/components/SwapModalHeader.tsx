@@ -51,7 +51,7 @@ export default function SwapModalHeader({
             fontSize="28px"
             color={
               priceImpactSeverity > 2
-                ? 'failure'
+                ? 'primary'
                 : showAcceptChanges && tradeType === TradeType.EXACT_INPUT
                 ? 'primary'
                 : 'text'

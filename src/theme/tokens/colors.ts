@@ -1,6 +1,6 @@
 export const baseColors = {
   white: "white",
-  failure: "#272425",
+  failure: "#24215596",
   failure33: "#ED4B9E33",
   primary: "#ffffff",
   primary0f: "#FFAC260f",
@@ -73,7 +73,7 @@ export const darkColors = {
   invertedContrast: "#162d27",
   input: "#5e5e5e33",
   inputSecondary: "#ffffff11",
-  modal: "#292929",
+  modal: "#6265a785",
   tertiary: "#b9b9b9",
   text: "#dadada",
   text99: "rgba(20, 20, 20, 0.8)",
