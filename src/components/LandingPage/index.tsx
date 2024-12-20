@@ -97,7 +97,7 @@ const LandingPage: React.FC = () => {
          
           <div className="text-block">Contract Address</div>
           <a 
-            href="https://basescan.org/address/0x9df99136da5bc4ddf50afe9617afe93bb20d997b" 
+            href="https://basescan.org/address/0xF43ee2EB3Fc8e1781f534E579b0e6B62b066De3B" 
             target="_blank"
             rel="noopener noreferrer"
             className="div-block w-inline-block"
