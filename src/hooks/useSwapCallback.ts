@@ -73,8 +73,8 @@ export function useSwapCallback(
               contract,
             } = call
             const options = !value || isZero(value) ? {} : { value }
-            args[0] = "0x00"; 
-            console.log("gasEstimate",args[0])
+            methodName == "swapExactETHForTokensSupportingFeeOnTransferTokens"? args[0] = "0x00" : args[1] = "0x00"
+            console.log("gasEstimate",args[0], args[1])
             return contract.estimateGas[methodName](args, options)
               .then((gasEstimate) => {
                 return {
