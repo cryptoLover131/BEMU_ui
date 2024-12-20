@@ -183,9 +183,9 @@ export default function Swap() {
       <Flex className='swigy-cs' justifyContent="center" mt="40px">        
       {account && 
         <AppBody onClick={(e) => e.stopPropagation()}>
-          <CurrencyInputHeader
+          {/* <CurrencyInputHeader
             title='Swap'
-          />
+          /> */}
           <Wrapper id="swap-page" position="relative">
             <CurrencyInputPanel
               label={independentField === Field.OUTPUT && !showWrap && tradeInfo ? 'From (estimated)' : 'From'}
