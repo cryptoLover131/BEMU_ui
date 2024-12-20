@@ -37,16 +37,16 @@ export function useSwapCallArguments(
 
     const swapMethods: SwapParameters[] = []
 
-    swapMethods.push(
-      Router.swapCallParameters(trade, {
-        feeOnTransfer: false,
-        allowedSlippage: new Percent(BigInt(allowedSlippage), BIPS_BASE),
-        recipient,
-        deadline: Number(deadline[0]),
-      }),
-    )
+    // swapMethods.push(
+    //   Router.swapCallParameters(trade, {
+    //     feeOnTransfer: false,
+    //     allowedSlippage: new Percent(BigInt(allowedSlippage), BIPS_BASE),
+    //     recipient,
+    //     deadline: Number(deadline[0]),
+    //   }),
+    // )
 
-    if (trade.tradeType === TradeType.EXACT_INPUT) {
+    // if (trade.tradeType === TradeType.EXACT_INPUT) {
       swapMethods.push(
         Router.swapCallParameters(trade, {
           feeOnTransfer: true,
@@ -55,7 +55,7 @@ export function useSwapCallArguments(
           deadline: Number(deadline[0]),
         }),
       )
-    }
+    // }
 
     return swapMethods.map((parameters) => ({ parameters, contract }))
   }, [account, allowedSlippage, chainId, contract, deadline, recipient, trade])

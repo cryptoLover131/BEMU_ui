@@ -9,6 +9,8 @@ import { useRouter } from 'next/router'
 import { useMenuItems } from './hooks/useMenuItems'
 import { getActiveMenuItem, getActiveSubMenuItem } from './utils'
 import { footerLinks } from './config/footerLinks'
+import GlobalSettings from './GlobalSettings'
+import { SettingsMode } from './GlobalSettings/types'
 
 const LinkComponent = (linkProps) => {
   return <NextLinkFromReactRouter to={linkProps.href} {...linkProps} prefetch={false} />

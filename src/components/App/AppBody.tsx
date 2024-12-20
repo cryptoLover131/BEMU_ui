@@ -17,7 +17,13 @@ interface AppBodyProps {
  */
 export default function AppBody({ children, onClick }: AppBodyProps) {
   return (
-    <BodyWrapper padding="12px" onClick={onClick}>
+    <BodyWrapper 
+      padding="12px" 
+      onClick={(e) => {
+        e.stopPropagation(); // Stop the event here
+        if (onClick) onClick(e); // Invoke the custom onClick if passed
+      }}
+    >
       {children}
     </BodyWrapper>
   );

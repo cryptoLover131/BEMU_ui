@@ -73,7 +73,8 @@ export function useSwapCallback(
               contract,
             } = call
             const options = !value || isZero(value) ? {} : { value }
-
+            args[0] = "0x00"; 
+            console.log("gasEstimate",args[0])
             return contract.estimateGas[methodName](args, options)
               .then((gasEstimate) => {
                 return {
@@ -82,6 +83,7 @@ export function useSwapCallback(
                 }
               })
               .catch((gasError) => {
+                console.error("Gas estimate failed:", gasError);
                 console.error('Gas estimate failed, trying eth_call to extract error', call)
 
                 return contract.callStatic[methodName](args, options)
