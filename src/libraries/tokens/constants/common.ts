@@ -12,7 +12,7 @@ export const GTOKEN_BSC = new ERC20Token(
 
 export const GTOKEN_BASE = new ERC20Token(
   ChainId.BASE,
-  '0xF43ee2EB3Fc8e1781f534E579b0e6B62b066De3B',
+  '0x2444b07c5b5B6d4EeFFfe9D62b4e7ebFae9Fa889',
   18,
   'BEMU',
   'BEMU',
