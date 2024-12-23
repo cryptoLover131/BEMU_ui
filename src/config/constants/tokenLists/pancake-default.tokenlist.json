@@ -12,11 +12,11 @@
   "tokens": [
     {
       "chainId": 8453,
-      "address": "0x71f917D2bacb43BcaB876c289fa71781f41Beb58",
+      "address": "0x170C045cfDbaA5EeDe7d0E6b1892875570111719",
       "name": "BEMU",
       "symbol": "BEMU",
       "decimals": 18,
-      "logoURI": "/images/8453/tokens/0x71f917D2bacb43BcaB876c289fa71781f41Beb58.png"
+      "logoURI": "/images/8453/tokens/0x170C045cfDbaA5EeDe7d0E6b1892875570111719.png"
     },
     {
       "chainId": 8453,

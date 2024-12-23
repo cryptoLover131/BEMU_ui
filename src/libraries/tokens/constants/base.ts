@@ -21,7 +21,7 @@ export const baseTokens = {
   ),
   bemu: new ERC20Token(
     ChainId.BASE,
-    '0x71f917D2bacb43BcaB876c289fa71781f41Beb58',
+    '0x170C045cfDbaA5EeDe7d0E6b1892875570111719',
     18,
     'BEMU',
     'BEMU',
