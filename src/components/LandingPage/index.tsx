@@ -102,7 +102,7 @@ const LandingPage: React.FC = () => {
             rel="noopener noreferrer"
             className="div-block w-inline-block"
           >
-            <div className="text-block copy">CA: 0x9df….</div>
+            <div className="text-block copy">CA: 0x170….</div>
             <img 
               src="/images/icons8-external-link-30.png" 
               loading="lazy" 
