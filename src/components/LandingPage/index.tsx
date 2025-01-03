@@ -109,7 +109,6 @@ const LandingPage: React.FC = () => {
               alt="external link" 
               className="ico"
             />
-            
           </a>
         </div>
       </div>
