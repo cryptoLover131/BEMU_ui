@@ -357,7 +357,7 @@ export default function AddLiquidity({ currencyA, currencyB }) {
                 width="100%"
                 variant='primary'
                 height="48px"
-                onClick={() => open()}
+               
               >
                 <Text fontSize="16px">
                   Connect Wallet
