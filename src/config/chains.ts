@@ -8,7 +8,7 @@ import {
   polygon,
   base
 } from 'wagmi/chains'
-
+// Add chain IDs you want.
 export enum ChainId {
   ETHEREUM = 1,
   ARBITRUM = 42161,
